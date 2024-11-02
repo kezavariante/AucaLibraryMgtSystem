@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Sign Up page</title>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-header">
+            <header>Sign Up</header>
+        </div>
+        <form class="signup" action="signup" method="post">
+            <div class="input-box">
+                <input 
+                    type="text" 
+                    class="input-field" 
+                    placeholder="Username" 
+                    name="userName" 
+                    autocomplete="off" 
+                    required
+                >
+            </div>
+            <div class="input-box">
+                <input 
+                    type="password" 
+                    class="input-field" 
+                    placeholder="Password" 
+                    name="password" 
+                    autocomplete="off" 
+                    required
+                >
+            </div>
+            
+            <div class="input-box">
+                <select class="input-field" name="role" required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="manager">Manager</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="hod">HOD</option>
+                    <option value="student">Student</option>
+                    <option value="dean">Dean</option>
+                    <option value="librarian">Librarian</option>
+                </select>
+            </div>
+            <div class="input-submit">
+                <button class="submit-btn" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="sign-in-link">
+            <p>Already have an account? <a href="signin.jsp">Sign In</a></p>
+        </div>
+    </div>
+</body>
+</html>
